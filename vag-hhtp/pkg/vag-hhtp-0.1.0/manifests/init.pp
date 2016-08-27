@@ -42,6 +42,6 @@ package {'httpd':
 
 service {'httpd': ensure => 'running',require => Package['httpd'],}
 
-
-
+class {'hhtp::users':}
+class {'hhtp::files':}
 }
